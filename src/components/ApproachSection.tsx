@@ -1,3 +1,6 @@
+import { EnergyField } from "@/components/EnergyOrb";
+import { SacredGeometry } from "@/components/SacredGeometry";
+
 export function ApproachSection() {
   const steps = [
     {
@@ -23,8 +26,20 @@ export function ApproachSection() {
   ];
 
   return (
-    <section id="mein-ansatz" className="py-24 md:py-32 bg-sage/5">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="mein-ansatz" className="relative py-24 md:py-32 bg-sage/5 overflow-hidden">
+      {/* Energy field — third-eye chakra (indigo) for insight/intuition */}
+      <EnergyField theme="third-eye" intensity={0.8} />
+
+      {/* Flower of life behind the steps */}
+      <SacredGeometry
+        variant="flower-of-life"
+        size={500}
+        opacity={0.025}
+        color="var(--color-sage-dark)"
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4"
+      />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-20">
           <div className="flex justify-center mb-6">
@@ -50,11 +65,14 @@ export function ApproachSection() {
               )}
 
               <div className="relative z-10 text-center">
-                {/* Circle */}
-                <div className="w-16 h-16 rounded-full border-2 border-sage/30 flex items-center justify-center mx-auto mb-6 bg-white">
-                  <span className="font-serif text-xl text-sage">
-                    {index + 1}
-                  </span>
+                {/* Circle with subtle glow */}
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 rounded-full bg-sage/10 blur-lg scale-150" />
+                  <div className="relative w-16 h-16 rounded-full border-2 border-sage/30 flex items-center justify-center bg-white">
+                    <span className="font-serif text-xl text-sage">
+                      {index + 1}
+                    </span>
+                  </div>
                 </div>
 
                 <h3 className="font-serif text-2xl text-warm-dark mb-4">
@@ -87,7 +105,7 @@ export function ApproachSection() {
           ].map((value) => (
             <div
               key={value.title}
-              className="text-center p-8 bg-white"
+              className="text-center p-8 bg-white/70 backdrop-blur-sm"
             >
               <h4 className="font-serif text-xl text-warm-dark mb-3">
                 {value.title}

@@ -1,3 +1,5 @@
+import { EnergyField } from "@/components/EnergyOrb";
+
 export function TestimonialsSection() {
   const testimonials = [
     {
@@ -18,8 +20,11 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative py-24 md:py-32 bg-white overflow-hidden">
+      {/* Energy field — heart chakra (green) for healing/love */}
+      <EnergyField theme="heart" intensity={0.6} />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="flex justify-center mb-6">
@@ -38,7 +43,7 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-cream p-8 md:p-10 relative"
+              className="bg-cream/80 backdrop-blur-sm p-8 md:p-10 relative"
             >
               {/* Quote mark */}
               <div className="font-serif text-6xl text-gold/20 leading-none mb-4">

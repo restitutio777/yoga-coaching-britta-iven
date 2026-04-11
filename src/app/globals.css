@@ -81,3 +81,87 @@ section[id] {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
+
+/* ============================================
+   Energy Orb Animations
+   Slow, organic floating movement patterns
+   ============================================ */
+
+@keyframes orbDrift1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, -40px) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  75% {
+    transform: translate(40px, 30px) scale(1.02);
+  }
+}
+
+@keyframes orbDrift2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(-40px, 30px) scale(1.08);
+  }
+  40% {
+    transform: translate(20px, -20px) scale(0.92);
+  }
+  60% {
+    transform: translate(-30px, -40px) scale(1.04);
+  }
+  80% {
+    transform: translate(50px, 10px) scale(0.97);
+  }
+}
+
+@keyframes orbDrift3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(25px, 35px) scale(1.06);
+  }
+  66% {
+    transform: translate(-35px, -25px) scale(0.94);
+  }
+}
+
+@keyframes orbPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.18;
+  }
+}
+
+.energy-orb--drift-1 {
+  animation: orbDrift1 ease-in-out infinite;
+}
+.energy-orb--drift-2 {
+  animation: orbDrift2 ease-in-out infinite;
+}
+.energy-orb--drift-3 {
+  animation: orbDrift3 ease-in-out infinite;
+}
+.energy-orb--pulse {
+  animation: orbPulse ease-in-out infinite;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .energy-orb--drift-1,
+  .energy-orb--drift-2,
+  .energy-orb--drift-3,
+  .energy-orb--pulse {
+    animation: none;
+  }
+}

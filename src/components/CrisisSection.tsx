@@ -1,3 +1,5 @@
+import { EnergyField } from "@/components/EnergyOrb";
+
 export function CrisisSection() {
   const symptoms = [
     {
@@ -45,8 +47,11 @@ export function CrisisSection() {
   ];
 
   return (
-    <section id="kundalini-krise" className="py-24 md:py-32 bg-cream">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="kundalini-krise" className="relative py-24 md:py-32 bg-cream overflow-hidden">
+      {/* Energy field — solar plexus (gold) for power/transformation */}
+      <EnergyField theme="solar" intensity={0.9} />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-20">
           <div className="flex justify-center mb-6">
@@ -65,7 +70,7 @@ export function CrisisSection() {
         </div>
 
         {/* Important message box */}
-        <div className="max-w-3xl mx-auto bg-white border border-sage/20 p-8 md:p-10 mb-16">
+        <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm border border-sage/20 p-8 md:p-10 mb-16">
           <div className="flex gap-4">
             <div className="shrink-0 mt-1">
               <div className="w-8 h-8 rounded-full bg-sage/10 flex items-center justify-center">
@@ -95,7 +100,7 @@ export function CrisisSection() {
           {symptoms.map((symptom) => (
             <div
               key={symptom.title}
-              className="bg-white p-8 hover-lift"
+              className="bg-white/80 backdrop-blur-sm p-8 hover-lift"
             >
               <div className="w-12 h-12 rounded-full bg-sage/8 flex items-center justify-center text-sage mb-5">
                 {symptom.icon}

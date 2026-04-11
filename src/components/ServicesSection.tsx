@@ -1,3 +1,6 @@
+import { EnergyField } from "@/components/EnergyOrb";
+import { SacredGeometry } from "@/components/SacredGeometry";
+
 export function ServicesSection() {
   const services = [
     {
@@ -36,8 +39,20 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="angebot" className="py-24 md:py-32 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="angebot" className="relative py-24 md:py-32 bg-white overflow-hidden">
+      {/* Energy field — throat chakra (blue) for communication/expression */}
+      <EnergyField theme="throat" intensity={0.7} />
+
+      {/* Sacred geometry accent */}
+      <SacredGeometry
+        variant="sri-yantra-rings"
+        size={350}
+        opacity={0.025}
+        color="var(--color-gold)"
+        className="absolute -left-24 bottom-20"
+      />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-3xl mb-20">
           <div className="ornament-line mb-6" />
@@ -56,7 +71,7 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.number}
-              className="group border border-border hover:border-sage/30 p-8 md:p-12 transition-all duration-500"
+              className="group border border-border hover:border-sage/30 p-8 md:p-12 transition-all duration-500 bg-white/60 backdrop-blur-sm"
             >
               <div className="grid md:grid-cols-12 gap-8">
                 {/* Number */}

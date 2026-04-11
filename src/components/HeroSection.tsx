@@ -1,10 +1,25 @@
+import { EnergyField } from "@/components/EnergyOrb";
+import { SacredGeometry } from "@/components/SacredGeometry";
+
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-sage/8 via-cream to-cream" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#f0eef5]/40 via-cream to-cream" />
 
-      {/* Decorative circle */}
+      {/* Energy field — crown chakra (violet/lavender) for spiritual connection */}
+      <EnergyField theme="crown" intensity={1.2} />
+
+      {/* Sacred geometry — subtle flower of life */}
+      <SacredGeometry
+        variant="flower-of-life"
+        size={700}
+        opacity={0.035}
+        color="var(--color-sage)"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      />
+
+      {/* Decorative circles */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-sage/10 opacity-40" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-gold/10 opacity-30" />
 
