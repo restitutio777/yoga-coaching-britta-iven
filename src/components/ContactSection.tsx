@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { EnergyField } from "@/components/EnergyOrb";
-import { SacredGeometry } from "@/components/SacredGeometry";
 
 export function ContactSection() {
   const [formState, setFormState] = useState({
@@ -23,15 +22,6 @@ export function ContactSection() {
     <section id="kontakt" className="relative py-24 md:py-32 bg-cream overflow-hidden">
       {/* Energy field — sacral chakra (warm orange) for connection/creativity */}
       <EnergyField theme="sacral" intensity={1.3} />
-
-      {/* Sacred geometry */}
-      <SacredGeometry
-        variant="seed-of-life"
-        size={400}
-        opacity={0.12}
-        color="var(--color-gold)"
-        className="absolute -right-32 -bottom-32"
-      />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16">

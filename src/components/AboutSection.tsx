@@ -1,20 +1,10 @@
 import { EnergyField } from "@/components/EnergyOrb";
-import { SacredGeometry } from "@/components/SacredGeometry";
 
 export function AboutSection() {
   return (
     <section id="ueber-mich" className="relative py-24 md:py-32 bg-white overflow-hidden">
       {/* Energy field — heart chakra (green) for compassion */}
       <EnergyField theme="heart" intensity={1.3} />
-
-      {/* Sacred geometry accent */}
-      <SacredGeometry
-        variant="seed-of-life"
-        size={300}
-        opacity={0.12}
-        color="var(--color-sage)"
-        className="absolute -right-20 top-20"
-      />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">

@@ -1,5 +1,4 @@
 import { EnergyField } from "@/components/EnergyOrb";
-import { SacredGeometry } from "@/components/SacredGeometry";
 
 export function ApproachSection() {
   const steps = [
@@ -30,15 +29,6 @@ export function ApproachSection() {
       {/* Energy field — third-eye chakra (indigo) for insight/intuition */}
       <EnergyField theme="third-eye" intensity={1.3} />
 
-      {/* Flower of life behind the steps */}
-      <SacredGeometry
-        variant="flower-of-life"
-        size={500}
-        opacity={0.12}
-        color="var(--color-sage-dark)"
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4"
-      />
-
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-20">
@@ -61,18 +51,16 @@ export function ApproachSection() {
             <div key={item.step} className="relative">
               {/* Connector line */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-full w-full h-px bg-border -translate-x-1/2 z-0" />
+                <div className="hidden md:block absolute top-10 left-full w-full h-px bg-gradient-to-r from-gold/20 via-gold/10 to-gold/20 -translate-x-1/2 z-0" />
               )}
 
               <div className="relative z-10 text-center">
-                {/* Circle with subtle glow */}
-                <div className="relative w-16 h-16 mx-auto mb-6">
-                  <div className="absolute inset-0 rounded-full bg-sage/10 blur-lg scale-150" />
-                  <div className="relative w-16 h-16 rounded-full border-2 border-sage/30 flex items-center justify-center bg-white">
-                    <span className="font-serif text-xl text-sage">
-                      {index + 1}
-                    </span>
-                  </div>
+                {/* Step number — large serif with accent line */}
+                <div className="mb-6">
+                  <span className="font-serif text-6xl font-light text-gold/50">
+                    {index + 1}
+                  </span>
+                  <div className="w-8 h-px bg-gold/30 mx-auto mt-2" />
                 </div>
 
                 <h3 className="font-serif text-2xl text-warm-dark mb-4">

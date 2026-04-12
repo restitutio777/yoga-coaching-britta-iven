@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans, Tangerine } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -8,6 +8,13 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const tangerine = Tangerine({
+  variable: "--font-disruption",
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -40,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`${cormorant.variable} ${dmSans.variable} h-full`}
+      className={`${cormorant.variable} ${dmSans.variable} ${tangerine.variable} h-full`}
     >
       <body className="min-h-full flex flex-col antialiased">
         <Navigation />

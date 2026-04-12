@@ -130,35 +130,13 @@ export function EnergyField({ theme, intensity = 1 }: EnergyFieldProps) {
       <EnergyOrb
         color1={colors.c1}
         color2={colors.c2}
-        size={500}
-        top="-10%"
-        left="-5%"
-        duration={25}
-        delay={0}
-        opacity={0.45 * intensity}
-        variant="drift-1"
-      />
-      <EnergyOrb
-        color1={colors.c3}
-        color2={colors.c4}
-        size={350}
-        top="60%"
-        left="75%"
-        duration={30}
-        delay={5}
-        opacity={0.35 * intensity}
-        variant="drift-2"
-      />
-      <EnergyOrb
-        color1={colors.c2}
-        color2={colors.c3}
-        size={280}
-        top="30%"
+        size={700}
+        top="20%"
         left="50%"
-        duration={22}
-        delay={8}
-        opacity={0.3 * intensity}
-        variant="drift-3"
+        duration={30}
+        delay={0}
+        opacity={0.25 * intensity}
+        variant="pulse"
       />
     </div>
   );

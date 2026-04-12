@@ -1,5 +1,4 @@
 import { EnergyField } from "@/components/EnergyOrb";
-import { SacredGeometry } from "@/components/SacredGeometry";
 
 export function ServicesSection() {
   const services = [
@@ -42,15 +41,6 @@ export function ServicesSection() {
     <section id="angebot" className="relative py-24 md:py-32 bg-white overflow-hidden">
       {/* Energy field — throat chakra (blue) for communication/expression */}
       <EnergyField theme="throat" intensity={1.3} />
-
-      {/* Sacred geometry accent */}
-      <SacredGeometry
-        variant="sri-yantra-rings"
-        size={350}
-        opacity={0.12}
-        color="var(--color-gold)"
-        className="absolute -left-24 bottom-20"
-      />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
