@@ -127,16 +127,53 @@ export function EnergyField({ theme, intensity = 1 }: EnergyFieldProps) {
       className="absolute inset-0 overflow-hidden pointer-events-none"
       aria-hidden="true"
     >
+      {/* Primary glow — large, centered, slow pulse */}
       <EnergyOrb
         color1={colors.c1}
         color2={colors.c2}
-        size={700}
-        top="20%"
+        size={600}
+        top="30%"
         left="50%"
-        duration={30}
+        duration={28}
         delay={0}
-        opacity={0.25 * intensity}
+        opacity={0.18 * intensity}
         variant="pulse"
+      />
+      {/* Secondary — drifts upper-left */}
+      <EnergyOrb
+        color1={colors.c3}
+        color2={colors.c4}
+        size={350}
+        top="-5%"
+        left="10%"
+        duration={32}
+        delay={2}
+        opacity={0.22 * intensity}
+        variant="drift-1"
+      />
+      {/* Tertiary — drifts lower-right */}
+      <EnergyOrb
+        color1={colors.c2}
+        color2={colors.c4}
+        size={400}
+        top="60%"
+        left="75%"
+        duration={26}
+        delay={5}
+        opacity={0.2 * intensity}
+        variant="drift-2"
+      />
+      {/* Accent — small, lower-left */}
+      <EnergyOrb
+        color1={colors.c1}
+        color2={colors.c3}
+        size={250}
+        top="70%"
+        left="5%"
+        duration={22}
+        delay={8}
+        opacity={0.15 * intensity}
+        variant="drift-3"
       />
     </div>
   );

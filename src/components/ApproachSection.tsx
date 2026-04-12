@@ -1,4 +1,5 @@
 import { EnergyField } from "@/components/EnergyOrb";
+import { SacredGeometry } from "@/components/SacredGeometry";
 
 export function ApproachSection() {
   const steps = [
@@ -25,9 +26,18 @@ export function ApproachSection() {
   ];
 
   return (
-    <section id="mein-ansatz" className="relative py-24 md:py-32 bg-sage/5 overflow-hidden">
+    <section id="mein-ansatz" className="relative py-24 md:py-32 bg-gradient-to-b from-[#F5F7F3] via-[#F0F4ED] to-[#F5F7F3] overflow-hidden">
       {/* Energy field — third-eye chakra (indigo) for insight/intuition */}
       <EnergyField theme="third-eye" intensity={1.3} />
+
+      {/* Sacred geometry — concentric rings, offset left */}
+      <SacredGeometry
+        variant="sri-yantra-rings"
+        size={450}
+        opacity={0.04}
+        color="var(--color-sage)"
+        className="absolute bottom-10 -left-24"
+      />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}

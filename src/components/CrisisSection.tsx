@@ -1,4 +1,5 @@
 import { EnergyField } from "@/components/EnergyOrb";
+import { SacredGeometry } from "@/components/SacredGeometry";
 
 export function CrisisSection() {
   const symptoms = [
@@ -25,9 +26,18 @@ export function CrisisSection() {
   ];
 
   return (
-    <section id="kundalini-krise" className="relative py-24 md:py-32 bg-cream overflow-hidden">
+    <section id="kundalini-krise" className="relative py-24 md:py-32 bg-gradient-to-b from-cream via-[#FFF8EE] to-cream overflow-hidden">
       {/* Energy field — solar plexus (gold) for power/transformation */}
       <EnergyField theme="solar" intensity={1.4} />
+
+      {/* Sacred geometry — seed of life, offset right */}
+      <SacredGeometry
+        variant="seed-of-life"
+        size={500}
+        opacity={0.04}
+        color="var(--color-gold)"
+        className="absolute top-20 -right-20"
+      />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}

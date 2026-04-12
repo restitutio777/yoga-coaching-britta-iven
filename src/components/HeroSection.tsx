@@ -101,13 +101,13 @@ export function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-2">
           <a
             href="#kontakt"
-            className="inline-flex items-center justify-center px-8 py-4 bg-sage text-white text-sm tracking-wider uppercase rounded-none hover:bg-sage-dark transition-colors duration-300"
+            className="inline-flex items-center justify-center px-10 py-4 bg-sage text-white text-sm tracking-wider uppercase rounded-full hover:bg-sage-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
           >
             Erstgesprach vereinbaren
           </a>
           <a
             href="#kundalini-krise"
-            className="inline-flex items-center justify-center px-8 py-4 border border-[#B87333]/30 text-[#B87333] text-sm tracking-wider uppercase rounded-none hover:border-[#B87333] hover:text-[#9A5F2A] transition-colors duration-300"
+            className="inline-flex items-center justify-center px-10 py-4 border border-[#B87333]/30 text-[#B87333] text-sm tracking-wider uppercase rounded-full hover:border-[#B87333] hover:text-[#9A5F2A] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
           >
             Mehr erfahren
           </a>

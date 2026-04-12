@@ -31,9 +31,10 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="font-serif text-2xl font-medium text-warm-dark tracking-wide hover:text-sage transition-colors"
+          className="font-serif text-2xl font-medium tracking-wide hover:opacity-80 transition-opacity"
         >
-          Britta Iven
+          <span className="text-warm-dark">Britta </span>
+          <span className="text-[#B87333]">Iven</span>
         </a>
 
         {/* Desktop Navigation */}
