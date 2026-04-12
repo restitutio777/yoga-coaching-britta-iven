@@ -28,13 +28,13 @@ export function ApproachSection() {
   return (
     <section id="mein-ansatz" className="relative py-24 md:py-32 bg-sage/5 overflow-hidden">
       {/* Energy field — third-eye chakra (indigo) for insight/intuition */}
-      <EnergyField theme="third-eye" intensity={0.8} />
+      <EnergyField theme="third-eye" intensity={1.3} />
 
       {/* Flower of life behind the steps */}
       <SacredGeometry
         variant="flower-of-life"
         size={500}
-        opacity={0.025}
+        opacity={0.12}
         color="var(--color-sage-dark)"
         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4"
       />

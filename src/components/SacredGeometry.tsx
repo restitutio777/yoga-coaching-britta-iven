@@ -14,7 +14,7 @@ interface SacredGeometryProps {
 export function SacredGeometry({
   variant,
   size = 400,
-  opacity = 0.04,
+  opacity = 0.15,
   className = "",
   color = "currentColor",
 }: SacredGeometryProps) {
@@ -30,7 +30,7 @@ export function SacredGeometry({
         viewBox="0 0 200 200"
         fill="none"
         stroke={color}
-        strokeWidth="0.5"
+        strokeWidth="0.8"
       >
         {variant === "flower-of-life" && <FlowerOfLife />}
         {variant === "sri-yantra-rings" && <SriYantraRings />}

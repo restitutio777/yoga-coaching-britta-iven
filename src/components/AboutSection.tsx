@@ -5,13 +5,13 @@ export function AboutSection() {
   return (
     <section id="ueber-mich" className="relative py-24 md:py-32 bg-white overflow-hidden">
       {/* Energy field — heart chakra (green) for compassion */}
-      <EnergyField theme="heart" intensity={0.8} />
+      <EnergyField theme="heart" intensity={1.3} />
 
       {/* Sacred geometry accent */}
       <SacredGeometry
         variant="seed-of-life"
         size={300}
-        opacity={0.03}
+        opacity={0.12}
         color="var(--color-sage)"
         className="absolute -right-20 top-20"
       />

@@ -22,7 +22,7 @@ export function TestimonialsSection() {
   return (
     <section className="relative py-24 md:py-32 bg-white overflow-hidden">
       {/* Energy field — heart chakra (green) for healing/love */}
-      <EnergyField theme="heart" intensity={0.6} />
+      <EnergyField theme="heart" intensity={1.3} />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}

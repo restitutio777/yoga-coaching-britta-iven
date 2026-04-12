@@ -8,20 +8,20 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#f0eef5]/40 via-cream to-cream" />
 
       {/* Energy field — crown chakra (violet/lavender) for spiritual connection */}
-      <EnergyField theme="crown" intensity={1.2} />
+      <EnergyField theme="crown" intensity={1.5} />
 
-      {/* Sacred geometry — subtle flower of life */}
+      {/* Sacred geometry — flower of life */}
       <SacredGeometry
         variant="flower-of-life"
         size={700}
-        opacity={0.035}
+        opacity={0.12}
         color="var(--color-sage)"
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
       />
 
       {/* Decorative circles */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-sage/10 opacity-40" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-gold/10 opacity-30" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border-2 border-sage/15 opacity-60" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border-2 border-gold/15 opacity-50" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         {/* Small ornament */}

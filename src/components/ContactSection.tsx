@@ -22,13 +22,13 @@ export function ContactSection() {
   return (
     <section id="kontakt" className="relative py-24 md:py-32 bg-cream overflow-hidden">
       {/* Energy field — sacral chakra (warm orange) for connection/creativity */}
-      <EnergyField theme="sacral" intensity={0.7} />
+      <EnergyField theme="sacral" intensity={1.3} />
 
       {/* Sacred geometry */}
       <SacredGeometry
         variant="seed-of-life"
         size={400}
-        opacity={0.025}
+        opacity={0.12}
         color="var(--color-gold)"
         className="absolute -right-32 -bottom-32"
       />

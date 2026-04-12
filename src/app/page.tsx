@@ -11,17 +11,17 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <WaveDivider fillColor="var(--color-white)" variant="gentle" />
+      <WaveDivider fillColor="#ffffff" variant="gentle" />
       <AboutSection />
-      <WaveDivider fillColor="var(--color-cream)" variant="flowing" />
+      <WaveDivider fillColor="#F5F0E8" variant="flowing" />
       <CrisisSection />
-      <WaveDivider fillColor="var(--color-white)" variant="breath" />
+      <WaveDivider fillColor="#ffffff" variant="breath" />
       <ServicesSection />
-      <WaveDivider fillColor="#f2f5f0" variant="gentle" />
+      <WaveDivider fillColor="#EAF0E6" variant="gentle" />
       <ApproachSection />
-      <WaveDivider fillColor="var(--color-white)" variant="flowing" />
+      <WaveDivider fillColor="#ffffff" variant="flowing" />
       <TestimonialsSection />
-      <WaveDivider fillColor="var(--color-cream)" variant="breath" />
+      <WaveDivider fillColor="#F5F0E8" variant="breath" />
       <ContactSection />
     </>
   );

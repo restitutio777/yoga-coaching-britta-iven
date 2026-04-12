@@ -49,7 +49,7 @@ export function CrisisSection() {
   return (
     <section id="kundalini-krise" className="relative py-24 md:py-32 bg-cream overflow-hidden">
       {/* Energy field — solar plexus (gold) for power/transformation */}
-      <EnergyField theme="solar" intensity={0.9} />
+      <EnergyField theme="solar" intensity={1.4} />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
