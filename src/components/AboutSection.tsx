@@ -10,21 +10,20 @@ export function AboutSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Portrait */}
-          <div className="relative max-w-md mx-auto md:mx-0">
-            <div className="aspect-[3/2] rounded-sm overflow-hidden shadow-xl shadow-warm-dark/10">
+          <div className="relative max-w-sm mx-auto md:mx-0">
+            <div className="aspect-square rounded-full overflow-hidden shadow-xl shadow-warm-dark/15 ring-1 ring-gold/30">
               <Image
                 src="/portrait.jpg"
                 alt="Portrait von Saraswati"
                 width={640}
                 height={427}
                 priority
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center [filter:sepia(0.35)_contrast(1.05)_brightness(1.03)_saturate(1.1)]"
               />
             </div>
-            {/* Decorative offset border */}
-            <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/40 rounded-sm -z-10" />
-            {/* Subtle gold accent */}
-            <div className="absolute -top-3 -left-3 w-24 h-24 border-t border-l border-gold/30 rounded-tl-sm" />
+            {/* Decorative outer ring */}
+            <div className="absolute inset-0 rounded-full border border-gold/40 scale-[1.04] pointer-events-none" />
+            <div className="absolute inset-0 rounded-full border border-gold/20 scale-[1.09] pointer-events-none" />
           </div>
 
           {/* Text content */}
