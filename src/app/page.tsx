@@ -5,7 +5,6 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { ApproachSection } from "@/components/ApproachSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { ContactSection } from "@/components/ContactSection";
-import { NatureMood } from "@/components/NatureMood";
 import { WaveDivider } from "@/components/WaveDivider";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <HeroSection />
       <WaveDivider fillColor="#ffffff" fromColor="#FFF7E8" variant="gentle" />
       <AboutSection />
-      <NatureMood />
       <WaveDivider fillColor="#FAF8F4" fromColor="#ffffff" variant="flowing" />
       <CrisisSection />
       <WaveDivider fillColor="#ffffff" fromColor="#FAF8F4" variant="breath" />
