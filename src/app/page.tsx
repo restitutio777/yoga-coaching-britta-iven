@@ -5,23 +5,23 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { ApproachSection } from "@/components/ApproachSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { ContactSection } from "@/components/ContactSection";
-import { WaveDivider } from "@/components/WaveDivider";
+import { SectionTransition } from "@/components/SectionTransition";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <WaveDivider fillColor="#ffffff" fromColor="#FFF7E8" variant="gentle" />
+      <SectionTransition from="#FFF7E8" to="#ffffff" height="sm" />
       <AboutSection />
-      <WaveDivider fillColor="#FAF8F4" fromColor="#ffffff" variant="flowing" />
+      <SectionTransition from="#ffffff" to="#FAF8F4" />
       <CrisisSection />
-      <WaveDivider fillColor="#ffffff" fromColor="#FAF8F4" variant="breath" />
+      <SectionTransition from="#FAF8F4" to="#ffffff" />
       <ServicesSection />
-      <WaveDivider fillColor="#F5F7F3" fromColor="#ffffff" variant="gentle" />
+      <SectionTransition from="#ffffff" to="#F5F7F3" />
       <ApproachSection />
-      <WaveDivider fillColor="#ffffff" fromColor="#F5F7F3" variant="flowing" />
+      <SectionTransition from="#F5F7F3" to="#ffffff" />
       <TestimonialsSection />
-      <WaveDivider fillColor="#FAF8F4" fromColor="#ffffff" variant="breath" />
+      <SectionTransition from="#ffffff" to="#FAF8F4" height="sm" />
       <ContactSection />
     </>
   );
