@@ -50,10 +50,10 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="mailto:britta@brittaiven.de"
+                  href="mailto:kontakt@saraswati.de"
                   className="hover:text-gold transition-colors"
                 >
-                  britta@brittaiven.de
+                  kontakt@saraswati.de
                 </a>
               </li>
               <li>Termine nach Vereinbarung</li>

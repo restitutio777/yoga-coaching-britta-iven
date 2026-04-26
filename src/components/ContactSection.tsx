@@ -136,8 +136,8 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-warm-dark">E-Mail</p>
-                  <a href="mailto:britta@brittaiven.de" className="text-sm text-sage hover:text-sage-dark transition-colors">
-                    britta@brittaiven.de
+                  <a href="mailto:kontakt@saraswati.de" className="text-sm text-sage hover:text-sage-dark transition-colors">
+                    kontakt@saraswati.de
                   </a>
                 </div>
               </div>

@@ -11,14 +11,14 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Portrait */}
           <div className="relative max-w-md mx-auto md:mx-0">
-            <div className="aspect-[3/4] rounded-sm overflow-hidden shadow-xl shadow-warm-dark/10">
+            <div className="aspect-[3/2] rounded-sm overflow-hidden shadow-xl shadow-warm-dark/10">
               <Image
                 src="/portrait.jpg"
                 alt="Portrait von Saraswati"
-                width={800}
-                height={1067}
+                width={640}
+                height={427}
                 priority
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             {/* Decorative offset border */}
