@@ -43,7 +43,7 @@ export function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-cream/80 backdrop-blur-sm p-8 md:p-10 relative"
+              className="bg-cream/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 relative"
             >
               {/* Quote mark */}
               <div className="font-serif text-6xl text-gold/20 leading-none mb-4">

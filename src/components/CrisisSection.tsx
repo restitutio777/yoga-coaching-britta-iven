@@ -58,7 +58,7 @@ export function CrisisSection() {
         </div>
 
         {/* Important message box */}
-        <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm border border-sage/20 p-8 md:p-10 mb-16">
+        <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm border border-sage/20 rounded-2xl p-8 md:p-10 mb-16">
           <div className="flex gap-4">
             <div className="shrink-0 mt-1">
               <div className="w-8 h-8 rounded-full bg-sage/10 flex items-center justify-center">
@@ -88,7 +88,7 @@ export function CrisisSection() {
           {symptoms.map((symptom) => (
             <div
               key={symptom.title}
-              className="bg-white/80 backdrop-blur-sm p-8 hover-lift"
+              className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 hover-lift"
             >
               <h3 className="font-serif text-xl text-warm-dark mb-3">
                 {symptom.title}

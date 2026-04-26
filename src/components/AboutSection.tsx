@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Landscape */}
           <div className="relative max-w-md mx-auto md:mx-0">
-            <div className="aspect-square rounded-sm overflow-hidden shadow-xl shadow-warm-dark/15 ring-1 ring-gold/20">
+            <div className="aspect-square rounded-2xl overflow-hidden shadow-xl shadow-warm-dark/15 ring-1 ring-gold/20">
               <Image
                 src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=70"
                 alt="Sanfte Berglandschaft im Morgennebel"
@@ -22,9 +22,9 @@ export function AboutSection() {
               />
             </div>
             {/* Decorative offset border */}
-            <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/40 rounded-sm -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/40 rounded-2xl -z-10" />
             {/* Subtle gold accent */}
-            <div className="absolute -top-3 -left-3 w-24 h-24 border-t border-l border-gold/30 rounded-tl-sm" />
+            <div className="absolute -top-3 -left-3 w-24 h-24 border-t border-l border-gold/30 rounded-tl-2xl" />
           </div>
 
           {/* Text content */}

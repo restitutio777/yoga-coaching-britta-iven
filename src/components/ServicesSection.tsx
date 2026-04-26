@@ -61,7 +61,7 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.number}
-              className="group border border-border hover:border-sage/30 p-8 md:p-12 transition-all duration-500 bg-white/60 backdrop-blur-sm"
+              className="group border border-border hover:border-sage/30 rounded-2xl p-8 md:p-12 transition-all duration-500 bg-white/60 backdrop-blur-sm"
             >
               <div className="grid md:grid-cols-12 gap-8">
                 {/* Number */}

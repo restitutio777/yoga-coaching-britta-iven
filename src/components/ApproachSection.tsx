@@ -103,7 +103,7 @@ export function ApproachSection() {
           ].map((value) => (
             <div
               key={value.title}
-              className="text-center p-8 bg-white/70 backdrop-blur-sm"
+              className="text-center rounded-2xl p-8 bg-white/70 backdrop-blur-sm"
             >
               <h4 className="font-serif text-xl text-warm-dark mb-3">
                 {value.title}
