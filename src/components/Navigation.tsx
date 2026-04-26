@@ -33,8 +33,7 @@ export function Navigation() {
           href="#"
           className="font-serif text-2xl font-medium tracking-wide hover:opacity-80 transition-opacity"
         >
-          <span className="text-warm-dark">Britta </span>
-          <span className="text-[#B87333]">Iven</span>
+          <span className="text-warm-dark">Saraswati</span>
         </a>
 
         {/* Desktop Navigation */}

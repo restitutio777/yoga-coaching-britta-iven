@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { EnergyField } from "@/components/EnergyOrb";
 
 export function AboutSection() {
@@ -8,16 +9,22 @@ export function AboutSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Image placeholder */}
-          <div className="relative">
-            <div className="aspect-[3/4] bg-cream-dark rounded-sm overflow-hidden">
-              {/* Placeholder with initials */}
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-sage/20 to-gold/10">
-                <span className="font-serif text-6xl text-sage/30">BI</span>
-              </div>
+          {/* Portrait */}
+          <div className="relative max-w-md mx-auto md:mx-0">
+            <div className="aspect-[3/4] rounded-sm overflow-hidden shadow-xl shadow-warm-dark/10">
+              <Image
+                src="/portrait.jpg"
+                alt="Portrait von Saraswati"
+                width={800}
+                height={1067}
+                priority
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Decorative offset border */}
-            <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/20 rounded-sm -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-full h-full border border-gold/40 rounded-sm -z-10" />
+            {/* Subtle gold accent */}
+            <div className="absolute -top-3 -left-3 w-24 h-24 border-t border-l border-gold/30 rounded-tl-sm" />
           </div>
 
           {/* Text content */}
@@ -29,7 +36,7 @@ export function AboutSection() {
 
             <div className="space-y-5 text-warm-gray leading-relaxed">
               <p>
-                Ich bin <strong className="text-warm-dark font-medium">Britta Iven</strong> &ndash;
+                Ich bin <strong className="text-warm-dark font-medium">Saraswati</strong> &ndash;
                 Begleiterin fur Menschen, die sich in einer Kundalini-Krise oder
                 spirituellen Notlage befinden.
               </p>

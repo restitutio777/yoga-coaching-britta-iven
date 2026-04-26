@@ -3,17 +3,17 @@ import { EnergyField } from "@/components/EnergyOrb";
 export function TestimonialsSection() {
   const testimonials = [
     {
-      text: "Als meine Kundalini-Erfahrungen begannen, dachte ich, ich wurde verrucht. Britta war die erste Person, die mir erklaren konnte, was mit mir geschieht. Allein das Wissen, dass ich nicht allein bin, hat mir unendlich geholfen.",
+      text: "Als meine Kundalini-Erfahrungen begannen, dachte ich, ich wurde verrucht. Saraswati war die erste Person, die mir erklaren konnte, was mit mir geschieht. Allein das Wissen, dass ich nicht allein bin, hat mir unendlich geholfen.",
       author: "M. K.",
       context: "Nach intensiver Meditationspraxis",
     },
     {
-      text: "Die Arbeit mit Britta hat mir geholfen, mich wieder sicher in meinem Korper zu fuhlen. Ihre ruhige, verstandnisvolle Art und ihre Erdungstechniken haben mir durch die schwierigste Zeit meines Lebens geholfen.",
+      text: "Die Arbeit mit Saraswati hat mir geholfen, mich wieder sicher in meinem Korper zu fuhlen. Ihre ruhige, verstandnisvolle Art und ihre Erdungstechniken haben mir durch die schwierigste Zeit meines Lebens geholfen.",
       author: "S. L.",
       context: "Spontanes Kundalini-Erwachen",
     },
     {
-      text: "Nach einem Retreat hatte ich wochenlang Symptome, die kein Arzt einordnen konnte. Britta hat mir gezeigt, dass es einen Weg durch diese Erfahrung gibt &ndash; und dass sie ein Geschenk sein kann.",
+      text: "Nach einem Retreat hatte ich wochenlang Symptome, die kein Arzt einordnen konnte. Saraswati hat mir gezeigt, dass es einen Weg durch diese Erfahrung gibt &ndash; und dass sie ein Geschenk sein kann.",
       author: "T. W.",
       context: "Nach einem Yoga-Retreat",
     },

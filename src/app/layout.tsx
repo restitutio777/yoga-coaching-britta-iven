@@ -19,16 +19,16 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Britta Iven | Kundalini-Krise & Spirituelle Begleitung",
+  title: "Saraswati | Kundalini-Krise & Spirituelle Begleitung",
   description:
-    "Einfuhlsame Begleitung bei Kundalini-Krisen und spirituellen Notlagen. Britta Iven bietet traumasensible Unterstutzung fur Menschen, die durch intensive spirituelle Erfahrungen gehen.",
+    "Einfuhlsame Begleitung bei Kundalini-Krisen und spirituellen Notlagen. Saraswati bietet traumasensible Unterstutzung fur Menschen, die durch intensive spirituelle Erfahrungen gehen.",
   keywords: [
     "Kundalini Krise",
     "spirituelle Krise",
     "Kundalini Syndrom",
     "spirituelle Begleitung",
     "Kundalini Erwachen",
-    "Britta Iven",
+    "Saraswati",
   ],
 };
 

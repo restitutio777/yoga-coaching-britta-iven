@@ -5,7 +5,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-2xl text-cream mb-4">Britta Iven</h3>
+            <h3 className="font-serif text-2xl text-cream mb-4">Saraswati</h3>
             <p className="text-sm leading-relaxed">
               Einfuhlsame Begleitung bei Kundalini-Krisen und spirituellen
               Transformationsprozessen. Du bist nicht allein auf deinem Weg.
@@ -64,7 +64,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream-dark/50">
-          <p>&copy; {new Date().getFullYear()} Britta Iven. Alle Rechte vorbehalten.</p>
+          <p>&copy; {new Date().getFullYear()} Saraswati. Alle Rechte vorbehalten.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-gold transition-colors">
               Datenschutz
