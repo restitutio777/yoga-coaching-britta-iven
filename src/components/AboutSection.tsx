@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { EnergyField } from "@/components/EnergyOrb";
+import { SectionOrnament } from "@/components/SectionOrnament";
 
 export function AboutSection() {
   return (
@@ -29,7 +30,7 @@ export function AboutSection() {
 
           {/* Text content */}
           <div>
-            <div className="ornament-line mb-6" />
+            <SectionOrnament className="mb-6" />
             <h2 className="font-serif text-4xl md:text-5xl font-light text-warm-dark mb-8">
               Uber mich
             </h2>

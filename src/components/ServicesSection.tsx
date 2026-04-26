@@ -1,4 +1,5 @@
 import { EnergyField } from "@/components/EnergyOrb";
+import { SectionOrnament } from "@/components/SectionOrnament";
 
 export function ServicesSection() {
   const services = [
@@ -45,7 +46,7 @@ export function ServicesSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-3xl mb-20">
-          <div className="ornament-line mb-6" />
+          <SectionOrnament className="mb-6" />
           <h2 className="font-serif text-4xl md:text-5xl font-light text-warm-dark mb-6">
             Mein Angebot
           </h2>

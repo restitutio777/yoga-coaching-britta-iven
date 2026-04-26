@@ -1,4 +1,5 @@
 import { EnergyField } from "@/components/EnergyOrb";
+import { SectionOrnament } from "@/components/SectionOrnament";
 
 export function TestimonialsSection() {
   const testimonials = [
@@ -27,9 +28,7 @@ export function TestimonialsSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <div className="flex justify-center mb-6">
-            <div className="ornament-line" />
-          </div>
+          <SectionOrnament align="center" className="mb-6" />
           <h2 className="font-serif text-4xl md:text-5xl font-light text-warm-dark mb-6">
             Stimmen
           </h2>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { EnergyField } from "@/components/EnergyOrb";
+import { SectionOrnament } from "@/components/SectionOrnament";
 
 // TODO: Replace with your actual Calendly scheduling URL
 const CALENDLY_URL = "https://calendly.com/britta-iven/erstgesprach";
@@ -108,7 +109,7 @@ export function ContactSection() {
         <div className="grid md:grid-cols-2 gap-16">
           {/* Left: Info */}
           <div>
-            <div className="ornament-line mb-6" />
+            <SectionOrnament className="mb-6" />
             <h2 className="font-serif text-4xl md:text-5xl font-light text-warm-dark mb-8">
               Lass uns sprechen
             </h2>
