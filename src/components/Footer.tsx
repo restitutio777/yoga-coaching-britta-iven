@@ -1,21 +1,46 @@
+import { SectionOrnament } from "@/components/SectionOrnament";
+
 export function Footer() {
   return (
-    <footer className="bg-warm-dark text-cream-dark/70 py-16">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
-          {/* Brand */}
+    <footer className="relative bg-warm-dark text-cream-dark/70 overflow-hidden">
+      {/* Soft golden glow at top */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-gold/[0.04] blur-3xl pointer-events-none"
+      />
+
+      <div className="relative max-w-5xl mx-auto px-6 pt-20 pb-10">
+        {/* Closing blessing */}
+        <div className="text-center mb-16">
+          <SectionOrnament align="center" className="mb-8 [&_span]:bg-gold/40" />
+          <p className="font-serif italic text-cream/90 text-xl md:text-2xl leading-relaxed max-w-xl mx-auto">
+            Du bist nicht allein.<br />
+            <span className="text-gold/80">Dein Weg ist heilig.</span>
+          </p>
+          <p className="mt-6 text-xs tracking-[0.3em] uppercase text-gold/60">
+            Namasté
+          </p>
+        </div>
+
+        {/* Brand + columns */}
+        <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div>
-            <h3 className="font-serif text-2xl text-cream mb-4">Saraswati</h3>
-            <p className="text-sm leading-relaxed">
+            <h3 className="font-serif text-3xl text-cream mb-3">Saraswati</h3>
+            <p className="text-sm leading-relaxed text-cream-dark/60">
               Einfuhlsame Begleitung bei Kundalini-Krisen und spirituellen
-              Transformationsprozessen. Du bist nicht allein auf deinem Weg.
+              Transformationsprozessen.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg text-cream mb-4">Navigation</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-serif text-base text-gold/80 mb-4 tracking-wide">
+              Navigation
+            </h4>
+            <ul className="space-y-2.5 text-sm">
               <li>
                 <a href="#ueber-mich" className="hover:text-gold transition-colors">
                   Uber mich
@@ -44,10 +69,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
-            <h4 className="font-serif text-lg text-cream mb-4">Kontakt</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-serif text-base text-gold/80 mb-4 tracking-wide">
+              Kontakt
+            </h4>
+            <ul className="space-y-2.5 text-sm">
               <li>
                 <a
                   href="mailto:kontakt@saraswati.de"
@@ -56,15 +82,15 @@ export function Footer() {
                   kontakt@saraswati.de
                 </a>
               </li>
-              <li>Termine nach Vereinbarung</li>
-              <li>Online & vor Ort moglich</li>
+              <li className="text-cream-dark/60">Termine nach Vereinbarung</li>
+              <li className="text-cream-dark/60">Online &amp; vor Ort moglich</li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream-dark/50">
-          <p>&copy; {new Date().getFullYear()} Saraswati. Alle Rechte vorbehalten.</p>
+        <div className="pt-8 border-t border-cream/[0.08] flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-cream-dark/40">
+          <p>&copy; {new Date().getFullYear()} Saraswati &middot; Mit Liebe gestaltet</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-gold transition-colors">
               Datenschutz
